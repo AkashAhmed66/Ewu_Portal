@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="container">
-    <h1> VACCINATION </h1>
+    <h1> Degree Review </h1>
 </div>
 @endsection
