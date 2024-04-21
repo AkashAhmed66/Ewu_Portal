@@ -1,11 +1,11 @@
 <?php
 
+use App\Models\Grade;
 use Illuminate\Support\Facades\Route;
 Auth::routes();
-
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/', function () {
-        return view('auth.login');
+        return view('ewu_welcome');
     });
     Route::get('/home', function () {
         return view('app');
@@ -46,6 +46,15 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/convo', function () {
         return view('convo');
     })->name('convo');
+    Route::get('/akash', function () {
+        $grade = Grade::first();
+        print_r($grade->grade);
+    });
+
 });
+Route::get('/activate', function () {
+    return view('activate');
+})->name('activate');
+
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -14,7 +14,7 @@
         border-bottom: 1px solid rgb(227, 227, 227);
     }
     .time{
-        background-color:  #C0392B;
+        background-color:  #D9EDF7;
         margin-bottom: 15px;
         height: 45px;
         display: flex;
@@ -23,7 +23,13 @@
         padding: 10px;
     }
     .time p{
-        color : white;
+        color : #507591;
+    }
+    .time p span{
+        font-weight: bold;
+    }
+    .nagivation p span{
+        font-weight: bold;
     }
     .body{
         display: flex;
@@ -45,31 +51,17 @@
     .btns p{
         color: white;
     }
-    .nagivation p span{
-        font-weight: bold;
-    }
 
 </style>
 @section('content')
     <div class="container">
         <div class="nagivation">
-            <p> <span> Home </span> / Advising </p>
+            <p> <span> Home </span> / Dashboard </p>
             {{-- {{auth()->id()}} --}}
         </div>
         <div class="time">
-            <p> YOUR ADVISING SCHEDULE NOT STARTED YET / ADVISING TIME IS OVER. </p>
+            <p> <span>Welcome</span> to East West University Student Portal!</p>
             {{-- {{auth()->id()}} --}}
-        </div>
-        <div class="body">
-            <div class="btns">
-                <p> Print Slip </p>
-            </div>
-            <div class="btns">
-                <p> Instruction </p>
-            </div>
-            <div class="btns">
-                <p> Advising Rule </p>
-            </div>
         </div>
     </div>
 @endsection
