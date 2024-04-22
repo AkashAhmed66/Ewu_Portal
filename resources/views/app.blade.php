@@ -19,9 +19,11 @@
         body{
             display: flex;
             flex-direction: row;
+            font-family: Arial, sans-serif; 
         }
         .main{
             width: 100%;
+            margin-left: 250px;
         }
         .head{
             width: 100%;

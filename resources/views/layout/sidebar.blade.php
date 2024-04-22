@@ -3,6 +3,7 @@
         height: 100vh;
         width: 250px;
         background-color: #315177;
+        position: fixed;
     }
     .list{
         list-style: none;
@@ -65,13 +66,13 @@
     <button class="toggle"> <i class="fa fa-bars fa-2xl"></i> </button>
     
     <ul class="list">
-        <li class="menu"> 
+        {{-- <li class="menu"> 
             <i class="fa-solid fa-syringe fa-lg left_icon"></i>
             <a class="text" href="{{route('vaccination')}}"> VACCINATION STATUS </a>
             <div class="float_right">
                 <i class="fa fa-chevron-right"> </i> 
             </div>
-        </li>
+        </li> --}}
         <li class="menu"> 
             <i class="fas fa-registered fa-lg left_icon"> </i> 
             <a class="text" href="{{route('advising')}}"> ADVISING </a> 
